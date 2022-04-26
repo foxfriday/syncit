@@ -12,7 +12,7 @@
 (defvar syncit-cal-dir "~/.calendar"
   "Calendar directory.")
 
-(defvar syncit-diary-file ecomplete-database-file
+(defvar syncit-diary-file (expand-file-name "syncit.diary" user-emacs-directory)
   "Location of the import diary file.")
 
 (defvar syncit-email-group nil
